@@ -1,0 +1,65 @@
+:root {
+  --bg-main: #212121;
+  --bg-sidebar: #171717;
+  --bg-subtle: #2f2f2f;
+  --bg-input: #2f2f2f;
+  --border-color: rgba(255, 255, 255, 0.12);
+  --text-main: #ececec;
+  --text-muted: #b4b4b4;
+  --accent-color: #10a37f;
+  --accent-blue: #3b82f6;
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, Monaco, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Typography & Links */
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.font-monospace {
+  font-family: var(--font-mono) !important;
+}
+
+.transition-all {
+  transition: all 0.2s ease-in-out;
+}
